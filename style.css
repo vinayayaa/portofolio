@@ -89,8 +89,9 @@ section { padding: 90px 8%; }
   display: flex; align-items: center; gap: 4rem;
   background: var(--soft);
 }
+.about-img { flex: 0 0 auto; max-width: 100%; }
 .about-img img {
-  width: 340px; height: 400px; object-fit: cover; border-radius: var(--radius);
+  width: 340px; height: auto; border-radius: var(--radius);
 }
 .about-text p { margin-bottom: 1rem; color: var(--muted); }
 .about-text strong { color: var(--text); }
@@ -150,7 +151,8 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: .9re
 
   .hero, .about { flex-direction: column; text-align: center; }
   .hero { padding-top: 110px; }
-  .hero-img img, .about-img img { width: 280px; height: 340px; }
+  .hero-img img { width: 280px; height: 340px; }
+  .about-img img { width: 280px; height: auto; }
   .badge { left: 50%; transform: translateX(-50%); white-space: nowrap; }
   .buttons { justify-content: center; }
   .skills { justify-content: center; }
